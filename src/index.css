@@ -1,0 +1,249 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #32324d !important;
+
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+nav.bg-nvbar-cls{
+  background: #32324d !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* log in styling */
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,label,span {
+  font-weight: 500;
+  font-family: 'Fira Sans', sans-serif;
+}
+.btnedited{
+    background-color: #2176ff ;
+    border: 3px solid yellow;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+body, html, .App, #root, .auth-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-light {
+  background-color: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.auth-inner {
+  width: 450px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all .3s;
+}
+
+.auth-wrapper .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+.auth-wrapper h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+.forgot-password, 
+.forgot-password a {
+  text-align: right;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+
+.forgot-password a {
+  color: #167bff;
+}
+@media(max-width:768px){
+  .card{
+    width:50% !important
+  }
+  .setsignup{
+    width: 73% !important;
+  }
+}
+@media (max-width:480px){
+  .card{
+    width:100% !important;
+
+
+  }
+  .stylefontmed{
+   font-size:  33px;
+  }
+  .card-new-post{
+    margin-right: 0px !important;
+  }
+  .card-new-post2{
+    margin-right: 0px !important;
+
+  }
+  .card-new-post3{
+    margin-right: 0px !important;
+
+  }
+  .stylebuttmed{
+    width: 150px !important;
+    margin-bottom: 6px;
+  }
+  .styleheadmed{
+    font-size: 22px;
+  }
+  .head_med_framework{
+    font-size: 32px !important; 
+
+  }
+  .style_head_two_med{
+    font-size: 15px;
+  }
+   .getToknow{
+     font-size:  18px;
+     margin-top: 7px;
+  }
+  .styleTryitbuttmed{
+    display: block !important;
+    width: auto !important;
+    padding: 5px 20px !important;
+    color: black;
+    margin: auto;
+    position: relative;
+    left: 49px;
+    margin-bottom: 6px;
+  }
+.stylebuttlogin{
+  width:90px !important;
+    margin-bottom: 6px;
+    margin: auto;
+    
+    position: relative;
+    left: 70px;
+    justify-content: center;  
+    display: block !important;
+}
+.setsignup{
+  width: 94% !important;
+  /* padding: 0 !important; */
+}
+.menus {
+  justify-content: center;
+  text-align: center;
+}
+.jstfy_content{
+  font-size:  21px;
+}
+.hideMed{
+  display: none !important;
+}
+ul.navbar-nav{
+  padding-left: 0px !important;
+}
+.loginmed{
+  text-align: center !important;
+}
+h5.forgotpassword{
+  text-align: center !important;
+  margin:11px;
+}
+
+.iconacco{
+  justify-content: center;
+}
+.content-blog{
+  word-break: break-all;
+}
+.setforget{
+  width: 100% !important;
+}
+.media_forget_btn{
+  text-align: center !important;
+
+}
+.dateset{
+  /* position: relative;
+  left: -74%; */
+  display: block;
+  text-align: left !important;
+}
+.reg{
+  font-size: medium;
+}
+.card_cms{
+  width: auto !important;
+}
+.username-post{
+  display: block;
+  padding-left: 1px;
+
+  font-size: 15px  !important;
+}
+getToknow 
+.submit_btn_forgt{
+width: 45% !important;
+margin-top: 8px;
+}
+.toolblog{
+ text-align: right; 
+ display: block !important;
+ top: 20px !important;
+  /* top: 20px; */
+  /* margin-top: 13px !important; */
+}
+.robotclass{
+  width: 55vw;
+  margin-bottom: 10px;
+}
+.font_all_lbl{
+  font-size: 14px;
+}
+.text_blog_post{
+  padding-left: 15px !important;
+}
+}

@@ -1,0 +1,14 @@
+.jumbotron{
+    background-color: #32324d !important;
+
+    color: white;
+    padding: 15%;
+        width: auto;
+        margin: auto;
+        justify-content: center;
+}
+.new_secondary_button{
+    color: white;
+    padding: 8px !important;
+    width: 30% !important;
+}

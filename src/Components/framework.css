@@ -1,0 +1,24 @@
+.btn-warning{
+    width: 11%;
+    padding: 5px;
+    
+    margin: 2px;
+}
+.jumbotron{
+    width: 100%;
+    margin: auto;
+    padding: 2% !important;
+    justify-content: center;
+    
+}
+.style_head_two_med{
+    font-size:  1.6rem
+}
+.btn-outline-secondary{
+    color: white;
+    padding: 8px !important;
+    width: 15%;
+    height: 49px !important;
+    margin: 5px;
+display: inline;
+}

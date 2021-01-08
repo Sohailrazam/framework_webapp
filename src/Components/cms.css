@@ -1,0 +1,35 @@
+.card_cms{
+    margin-top: 4% !important;
+    width: 55%;
+    margin: auto;
+    padding: 17px;
+}
+
+.style_input_cms{
+    color: white !important;
+    background: transparent !important;
+    border: 2px solid  #60607c;
+    
+}
+
+.text_area_cms{
+    background: transparent !important;
+    color: white !important;
+    background-color: red;
+    border: 2px solid  #60607c;
+    height: 55vh !important;
+}
+#additionalInfo{
+    border: none;
+}
+.style_input_cms_content{
+     border-radius: 3px;
+    color: white !important;
+    background: transparent !important;
+    background-color: red;
+    height: 45vh;
+    width: 53vw;
+    border-radius: 4px ;
+    border: 2px solid  #60607c;
+  }
+ 

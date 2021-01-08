@@ -1,0 +1,79 @@
+.logoclass{
+  filter: brightness(0) invert(1);
+  float: left;
+  position: relative;
+  top: -21px;
+  left: -28px;
+    /* margin-left: 13px; */
+  }
+  .reg{
+    color: #eee;
+    text-align: left;  
+  }
+  .submit_reg{
+    padding:4% !important;
+    width: 80%;
+  }
+  .custom-control-input:checked~.custom-control-label:before{
+    border-color: #32324d !important;
+    background-color: #32324d !important;
+  }
+  .custom-checkbox .custom-control-input:checked~.custom-control-label:after{
+    content: '\2714';
+    color: yellow;
+    top: 1px;
+    background: none !important;
+}    
+
+  
+  .robotclass{
+    border:1px solid #6c757d !important;
+    border-radius: 4px;
+    background-color: rgb(50, 50, 77);
+    color: white;
+    padding: 4%;
+  }
+  .cardsignup {
+    /* box-shadow: 2px 8px 20px #ddd; */
+    box-shadow: none;
+    min-height: 400px;
+    border: 1px solid #eee;
+    margin: auto;
+    padding: 50px;
+    background-color: #454457 ;
+    justify-content: center;
+    transition: 0.5s linear;
+  }
+  .setsignup{
+    margin-top: 4% !important;
+    width: 55%;
+    margin: auto;
+    padding: 17px;
+  }
+  /* .custom-checkbox .custom-control-input:checked~.custom-control-label::after{
+    filter: invert(96%) sepia(74%) saturate(3574%) hue-rotate(355deg) brightness(103%) contrast(104%);
+  } */
+  /* .custom-checkbox .custom-control-input:checked~.custom-control-label::after{
+    filter: invert(96%) sepia(74%) saturate(3574%) hue-rotate(355deg) brightness(103%) contrast(104%);
+
+  } */
+    .submit{
+      padding: 0px 40px 5px 40px !important;
+    }
+  .card:hover {
+    box-shadow: none;
+  }
+  
+  .style_input{
+    color: white !important;
+    background: transparent !important;
+    border: none !important;
+    
+    border-bottom: 1px solid white !important;
+    border-radius: 0 !important;
+  }
+  .style_input:focus{
+    box-shadow: none;
+  }
+  
+  

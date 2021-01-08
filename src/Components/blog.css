@@ -1,0 +1,104 @@
+.languages{
+    text-align: left;
+    padding: 6px;
+}
+.plussymbol{
+    font-size: 30px;
+    color: white;
+}
+.toolblog{
+    position: relative;
+    bottom: 12px;
+    right: 7px;
+    display: inline;
+}
+.card-new-post{
+    background-color:#373752;
+    padding:3px;
+    border-radius: 9px;
+    text-align: left;
+    margin-left: 3px;
+    /* marg */
+    margin-bottom: 9px;
+    
+}
+.card-new-post2{
+    background-color:#373752;
+    padding:3px  ;
+    border-radius: 9px;
+    text-align: left;
+    border: 5px solid ;
+    margin-left: 3px;
+    /* marg */
+    border: 2px solid  #60607c;
+    margin-bottom: 9px;
+
+}
+.card-new-post3{
+    background-color:#373752;
+    padding:3px  ;
+    border-radius: 9px;
+    text-align: left;
+    border: 5px solid ;
+    margin-left: 3px;
+    /* marg */
+    border: 2px solid  #60607c;
+    margin-bottom: 9px;
+    height: 120px;
+    }
+.username-post{
+    
+    color: #babad8;
+    /* line-height: 14px; */
+    text-align: left;
+    padding-left: 12px;
+
+}
+.content-blog{
+    color: #d2d2e3;
+    padding-top: 13px;
+    margin-bottom: 0;
+  
+}
+.para{
+    text-align: justify;
+    padding: 3px;
+    margin: 2px 20px;
+}
+.sub-head-style{
+    color:  #babad8;
+    padding-left: 24px;
+    font-size: 18px;
+}
+.dateset{
+    font-size: 14px;
+    color: #b9b9db;
+    line-height: 14px;
+    text-align: right;
+    display: inline-block;
+    
+}
+.icon-blog{
+    font-size: 11px;
+    padding: 5px;
+    position: relative;
+    top: -14px;
+}
+
+.content-div-col2{
+    border: 2px solid  #60607c;
+    max-height: 590px;
+    overflow-y: scroll;
+    scrollbar-color: #C5C5E0;
+
+}
+.content-div-col2::-webkit-scrollbar {
+    width: 5px;
+    height: 20px;
+}
+.content-div-col2::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background:  #aaaac7;
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);  */
+}

@@ -1,0 +1,291 @@
+
+.slick-track{
+    padding-top: 135px;
+    padding-bottom: 50px;
+    margin-bottom: 90px;
+    display: flex !important;
+}
+.display-on-active{
+    display: none;
+    /* font-family: Aileron !important; */
+
+    font-size: 18px !important;
+line-height: 22px !important; 
+
+color: #F0F0FF !important;
+}
+.respkg-cls2{
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 43px;
+color: #F0F0FF !important;
+
+}
+.cardINFO_SubHead_inactive{
+    /* font-family: Aileron !important; */
+
+    font-style: normal !important;
+font-weight: normal !important;
+    font-size: 18px !important;
+    line-height: 22px !important;
+    
+    color: #F0F0FF !important;
+    
+}
+.pkg-price-lp{
+    padding-left: 23px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #F0F0FF;
+    
+}
+.cardINFO_head{
+    /* font-family: Aileron !important; */
+    /* background-color: red; */
+font-style: normal !important;
+font-weight: normal !important;
+font-size: 36px !important;
+line-height: 43px;
+padding-top:  30px
+}
+div.c-card-h-cls{
+  
+color: #F0F0FF !important;
+    background: rgba(99, 99, 128, 0.1);
+border: 3px solid rgba(240, 240, 255, 0.1);
+box-sizing: border-box;
+border-radius: 5px;
+    /* background-color: #54546e !important;
+    
+    border:2px solid #60607c  !important; */
+    
+}
+.btn-sub-cls{
+    background-color:transparent ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+border: 1px solid #E4DC00;
+border-radius: 5px;
+    color: #F0F0FF;
+}
+.slick-prev:before{
+    content: '';
+    position: relative;
+    /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
+    content: "";
+    display: inline-block;
+    /* By using an em scale, the arrows will size with the font */
+    width: 0.9em;
+    height: 0.9em;
+    border-right: 0.1em solid white;
+    border-top: 0.1em solid white;
+    transform: rotate(230deg);
+    background-color: transparent !important;
+    margin-right: 0.5em;
+    /* font-size: 43px; */
+    /* background: url('https://www.figma.com/file/zUdGlyaOYfub9n11zlvFQg/Framework?node-id=402%3A306') !important; */
+}
+p.f-14-c-cls{
+    font-size:24px !important;
+    margin-bottom: 12px;
+font-style: normal;
+color: #F0F0FF;
+font-weight: normal;
+line-height: 29px;
+}
+.btn{
+    padding: 6px;
+}
+.f-s-cls{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    
+    color: #F0F0FF !important;
+} 
+
+.cus-bdr-cls{
+    border: 3px solid rgba(240, 240, 255, 0.1) !important;
+    
+    /* background-color: #60607c ; */
+    /* opacity: 0.1 !important; */
+    /* z-index: -1 !important; */
+}
+.m-l-c-16-cls{
+    margin-left: 16%;
+   margin-bottom:  15px !important;
+}
+.m-l-c-16-two-cls{
+    margin-bottom:  15px !important;
+}
+.f-15-c-cls{
+    font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+
+color: #F0F0FF;
+}
+@media(max-width:480px){
+ 
+    .m-l-c-16-cls{
+        margin-left: -15px;
+    }
+    .f-s-cls{
+        font-size:  12px !important
+    }
+    .btn-sub-cls{
+        font-size: 12px;
+        width:63px !important;
+    }
+    .crd-brdr-cls{
+        display: none;
+    }
+    .slick-prev:before{
+        display: block;
+    }
+    .resp-pkg-cls{
+        margin-top: 0px !important;
+    }
+}
+.card.cus-bdr-cls{
+    background: transparent;
+}
+.slick-next:before{
+    content: '';
+    position: relative;
+    /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
+    content: "";
+    display: inline-block;
+    /* By using an em scale, the arrows will size with the font */
+    width: 0.9em;
+    height: 0.9em;
+    border-right: 0.1em solid white;
+    border-top: 0.1em solid white;
+    transform: rotate(45deg);
+    background-color: transparent !important;
+    margin-right: 0.5em;
+    /* font-size: 43px; */
+    /* background: url('https://www.figma.com/file/zUdGlyaOYfub9n11zlvFQg/Framework?node-id=402%3A306') !important; */
+}
+@media(min-width:1024px){
+    .slick-current +.slick-active+.slick-active div.c-card-h-cls{
+        transform: scale(1.6);
+        z-index: 10000000000000 !important;
+    
+    }
+    .slick-current +.slick-active+.slick-active div.c-card-h-cls .display-on-active{
+        display: block !important;
+    }
+    .slick-current +.slick-active+.slick-active div.c-card-h-cls p{
+        font-size: 10px;
+    }
+    .slick-current +.slick-active+.slick-active div.c-card-h-cls button{
+        padding: 5px 6px;
+        font-size: 11px;
+    }
+    .slick-current +.slick-active+.slick-active div.c-card-h-cls h5{
+        font-size: 14px;
+    }
+    .slick-current +.slick-active+.slick-active div.c-card-h-cls h6{
+        font-size: 12px;
+    }
+
+
+}
+/* .bodyCard{
+    background: rgba(99, 99, 128, 0.1);
+    border: 3px solid rgba(240, 240, 255, 0.1);
+    box-sizing: border-box;
+    border-radius: 5px;
+} */
+/* @media(min-width:1920px){
+
+    .bodyCard{
+    
+        background-color: red !important;
+        width: 279.95px;
+    height: 279.95px !important ;
+        overflow: hidden !important;
+    }
+} */
+div.slick-active{
+    transition: .3s all;
+    margin-left: 8px;
+    margin-right: 8px;    
+}
+
+.card_cls_left{
+    text-align: left;
+    padding-left: 12px;
+    /* height: 92px; */
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+
+color: #F0F0FF;
+}
+div.c-card-h-cls{
+    min-height: auto;
+   width:  279.95px !important;
+   height:  279.95px !important;
+   
+    /* width: 95% !important; */
+}
+div.c-card-h-cls .card-body{
+    padding: 5px;
+    width: 100% !important;   
+    /* background-color: ; */
+    background-color: #3c3c58 !important;
+    height: 273px;
+    background-color:rgba(99, 99, 128, 0.1); ;
+    overflow: hidden !important;
+    
+}
+
+@media(max-width:786px){
+    .cu-med-cls{
+      display: none;
+      /* position: absolute;
+      padding: 13px !important; */
+    }
+    .slick-current +.slick-active div.c-card-h-cls{
+        transform: scale(1.4);
+        z-index: 10000000000000 !important;
+        max-height: 24vh !important;
+        
+        overflow: hidden !important;
+        font-size: 1rem;
+    }
+    .slick-current +.slick-active div.c-card-h-cls .display-on-active{
+       
+
+        display: block !important;
+        
+    }
+    .slick-current +.slick-active+.slick-active div.c-card-h-cls .display-on-active{
+        display: block !important;
+    }
+    .slick-current +.slick-active+.slick-active div.c-card-h-cls p{
+        font-size: 10px;
+    }
+    .slick-current +.slick-active+.slick-active div.c-card-h-cls button{
+        padding: 5px 6px;
+        font-size: 11px;
+    }
+    .slick-current +.slick-active+.slick-active div.c-card-h-cls h5{
+        font-size: 16px;
+    }
+    .slick-current +.slick-active+.slick-active div.c-card-h-cls h6{
+        font-size: 12px;
+    }
+}

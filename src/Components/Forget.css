@@ -10,6 +10,10 @@
 .reg {
     color: #eee;
     text-align: left;
+    color: #eee; 
+      /* font-family: Aileron; */
+  font-style: normal;
+  font-weight: normal;
 }
 
 .custom-control-input:checked~.custom-control-label:before {
@@ -36,21 +40,32 @@
 .cardforget {
     /* box-shadow: 2px 8px 20px #ddd; */
     box-shadow: none;
-
-    border: 1px solid #eee;
     margin: auto;
-    padding: 50px;
-    background-color: #454457;
+    padding: 10px;
+    background-color: transparent;
     justify-content: center;
     transition: 0.5s linear;
 }
-.submit_btn_forgt {
-    padding:4px !important;
 
-    margin-right:-22px ;
+.submit_btn_forgt {
+    /* padding: 4px !important; */
+    border: 3px solid rgba(240, 240, 255, 0.1);
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+text-align: center;
+
+color: #F0F0FF;
+    margin-right: -22px;
 }
+
 .setforget {
-    margin-top: 4% !important;
+    margin-top: 13% !important;
     width: 55%;
 
     margin: auto;

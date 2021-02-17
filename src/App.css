@@ -1,8 +1,14 @@
 .App {
   text-align: center;
+background: #32324D !important;
 }
-
-
+/* @media(max-width:1020px){
+  .App {
+    width: 100vw;
+  height: 100vh;
+  background: #32324D;
+  } 
+} */
 .App-logo {
   height: 40vmin;
   pointer-events: none;

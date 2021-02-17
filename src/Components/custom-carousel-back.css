@@ -1,0 +1,113 @@
+
+.slick-track{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.display-on-active{
+    display: none;
+}
+div.c-card-h-cls{
+    color: white !important;
+}
+.slick-prev:before{
+    content: '';
+    position: relative;
+    /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
+    content: "";
+    display: inline-block;
+    /* By using an em scale, the arrows will size with the font */
+    width: 0.9em;
+    height: 0.9em;
+    border-right: 0.1em solid white;
+    border-top: 0.1em solid white;
+    transform: rotate(230deg);
+    background-color: transparent !important;
+    margin-right: 0.5em;
+    /* font-size: 43px; */
+    /* background: url('https://www.figma.com/file/zUdGlyaOYfub9n11zlvFQg/Framework?node-id=402%3A306') !important; */
+}
+
+.cus-bdr-cls{
+    border: 1px solid #54546e;
+}
+.card.cus-bdr-cls{
+    background: transparent;
+}
+.slick-next:before{
+    content: '';
+    position: relative;
+    /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
+    content: "";
+    display: inline-block;
+    /* By using an em scale, the arrows will size with the font */
+    width: 0.9em;
+    height: 0.9em;
+    border-right: 0.1em solid white;
+    border-top: 0.1em solid white;
+    transform: rotate(45deg);
+    background-color: transparent !important;
+    margin-right: 0.5em;
+    /* font-size: 43px; */
+    /* background: url('https://www.figma.com/file/zUdGlyaOYfub9n11zlvFQg/Framework?node-id=402%3A306') !important; */
+}
+@media(min-width:1024px){
+    .slick-current +.slick-active+.slick-active div.c-card-h-cls{
+        transform: scale(1.4);
+        z-index: 10000000000000 !important;
+    }
+    .slick-current +.slick-active+.slick-active div.c-card-h-cls .display-on-active{
+        display: block !important;
+    }
+    .slick-current +.slick-active+.slick-active div.c-card-h-cls p{
+        font-size: 10px;
+    }
+    .slick-current +.slick-active+.slick-active div.c-card-h-cls button{
+        padding: 5px 6px;
+        font-size: 11px;
+    }
+    .slick-current +.slick-active+.slick-active div.c-card-h-cls h5{
+        font-size: 14px;
+    }
+    .slick-current +.slick-active+.slick-active div.c-card-h-cls h6{
+        font-size: 12px;
+    }
+
+
+}
+
+div.slick-active{
+    transition: .3s all;
+}
+
+div.c-card-h-cls{
+    min-height: auto;
+    width: 95% !important;
+}
+div.c-card-h-cls .card-body{
+    padding: 5px;   
+}
+@media(max-width:786px){
+    .slick-current +.slick-active div.c-card-h-cls{
+        transform: scale(1.4);
+        z-index: 10000000000000 !important;
+    }
+    .slick-current +.slick-active div.c-card-h-cls .display-on-active{
+        display: block !important;
+    }
+    .slick-current +.slick-active+.slick-active div.c-card-h-cls .display-on-active{
+        display: block !important;
+    }
+    .slick-current +.slick-active+.slick-active div.c-card-h-cls p{
+        font-size: 10px;
+    }
+    .slick-current +.slick-active+.slick-active div.c-card-h-cls button{
+        padding: 5px 6px;
+        font-size: 11px;
+    }
+    .slick-current +.slick-active+.slick-active div.c-card-h-cls h5{
+        font-size: 16px;
+    }
+    .slick-current +.slick-active+.slick-active div.c-card-h-cls h6{
+        font-size: 12px;
+    }
+}

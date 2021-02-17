@@ -1,14 +1,63 @@
-.jumbotron{
-    background-color: #32324d !important;
-
+.jumbotron {
+    background-color: #32324D !important;
     color: white;
     padding: 15%;
-        width: auto;
-        margin: auto;
-        justify-content: center;
+    /* width: auto; */
+    margin: auto;
+    justify-content: center;
+    /* margin-top: 10%;
+    width: 1920px;
+height: 1080px; */
+
+background: #32324D;
 }
-.new_secondary_button{
+.btn-tryout{
+    /* font-family: Aileron; */
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+border: 3px solid rgba(97, 97, 131, 0.1);
+box-sizing: border-box;
+border-radius: 5px;
+color: #32324D;
+}
+.getToKnowf{
+    border: 3px solid rgba(240, 240, 255, 0.1);
+box-sizing: border-box;
+font-style: normal;
+padding-left: 10px;
+padding-right: 10px;
+font-weight: normal;
+font-size: 18px;
+background: rgba(99, 99, 128, 0.1);
+line-height: 22px;
+border-radius: 5px;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+color: #F0F0FF;
+}
+
+.btn-stl-new {
+/* font-family: Aileron; */
+font-style: normal;
+font-weight: normal;
+font-size: 72px;
+}
+.btn2-stl-new{
+    
+/* font-family: Aileron; */
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 43px;
+}
+
+.new_secondary_button {
     color: white;
     padding: 8px !important;
     width: 30% !important;
+    background-color: #E4DC00 !important;
 }

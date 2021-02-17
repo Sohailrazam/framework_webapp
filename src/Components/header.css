@@ -1,48 +1,44 @@
-/* .header {
-    flex-direction: row;
-    display: flex;
-    color: white;
-    flex-direction: column;
-    align-items: center;
 
-    justify-content: space-around;
-}
-nav ul li{
-    list-style: none;
-    display:inline-block;
-    padding: 3px ;    
-}
-#components-layout-demo-top-side-2 .logo {
-    float: left;
-    width: 120px;
-    height: 31px;
-    margin: 16px 24px 16px 0;
-    background: rgba(255, 255, 255, 0.3);
-  }
-  
-  .ant-row-rtl #components-layout-demo-top-side-2 .logo {
-    float: right;
-    margin: 16px 0 16px 24px;
-  }
-  
-  .site-layout-background {
-    background: #fff;
-  }
-
- */
  .bg-nvbar-cls{
+  /* font-family: Aileron; */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+    color: #F0F0FF;
    border-bottom: 1px solid #6a6a8b ;
+   background: rgba(99, 99, 128, 0.1);
+border: 3px solid rgba(240, 240, 255, 0.1);
+box-sizing: border-box;
+
+
  }
+.stylebuttloginps_header_page_cls{
+  border: 3px solid rgba(240, 240, 255, 0.1);
+box-sizing: border-box;
+border-radius: 5px;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+background: rgba(99, 99, 128, 0.1);
+text-align: center;
+
+color: #F0F0FF !important;
+
+}
 .logoc{
+  
   filter: brightness(0) invert(1);
 }
  .navbar-light .navbar-nav .nav-link{
-   color: white !important ;
+  color: #F0F0FF !important ;
    font-size: 18px;
-
- }
+   padding-right: 2.2rem !important;
+   
+  }  
  .navbar-light .navbar-nav a.nav_link_color_y,a.nav_link_color_y span{
-   color: yellow !important;
+  color: #E4DC00!important;
  }
  .navbar-toggler-icon{
  filter:  brightness(0) invert(1);
@@ -59,5 +55,5 @@ padding-left: 90px !important;
   
 } */
 .nav-item{
-  color: white !important;
+  color: #F0F0FF !important;
 }

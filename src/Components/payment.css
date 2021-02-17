@@ -1,0 +1,163 @@
+.summary{
+    /* height: 70vh !important; */
+     padding-left: 6px;
+     padding-right: 0px;
+ 
+     background-color: transparent;
+     /* border: 2px solid #60607c; */
+ }
+ .payment-desc-cls{
+     font-style: normal;
+     font-weight: normal;
+     color: #F0F0FF
+ }
+ .heading_payment_cls{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    
+    color: #F0F0FF;
+    
+ }
+ 
+ .p-l-c-3-5-cls{
+     padding-left: 3.5rem!important;
+ }
+ .p-l-2-0-c-cls{
+     padding-left: 2rem;
+ }
+ .f-14-c-cls_payment{
+     text-align: center;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 18px;
+     line-height: 10px;
+     /* identical to box height */
+     
+     
+     color: #F0F0FF;
+     
+ }
+ .contentPayment{
+    font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+     /* font-family: Aileron; */
+     font-style: normal;
+     font-weight: normal;
+     /* padding-left: 3px;
+     padding-right: 18px; */
+ 
+     /* word-spacing: px; */
+ }
+ .method{
+    /* height: 60vh !important; */
+    /* padding-left: 5px; */
+    padding-right: 6px;
+ 
+ }
+ .cus-bdr-receipt-cls{
+     /* background-color: red; */
+     padding-left: 30px;
+ }
+ .pay_method_headf_cls{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    color: #F0F0FF;
+    padding-bottom: 16px;
+    
+ }
+ .submit_btn_pay{
+    border: 3px solid rgba(240, 240, 255, 0.1);
+    box-sizing: border-box;
+     background: rgba(99, 99, 128, 0.1);
+     border-radius: 5px;
+     font-style: normal;
+     /* paddi */
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+box-sizing: border-box;
+border-radius: 5px;
+/* padding-inline: 47px; */
+padding-left: 55px;
+padding-right: 55px;
+color: #F0F0FF;
+ }
+ .paypal_details_cls{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    
+    color: #F0F0FF;
+    
+ }
+ .cus-bdr-payment-cls{
+    background: rgba(99, 99, 128, 0.1);
+    border: 3px solid rgba(240, 240, 255, 0.1) !important;
+box-sizing: border-box;
+border-radius: 5px !important;
+height: 35px;
+width: 733px;
+    
+}
+ .payment_ways_cls{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    
+    color: #F0F0FF;
+ }
+ .border-cls{
+    border: 3px solid rgba(240, 240, 255, 0.1);
+box-sizing: border-box;
+border-radius: 5px;
+     height: 93vh;
+ }
+ .main-cls-pmnt{
+     padding-left: 37px !important;
+ }
+ .style-in-cls{
+     padding-right: 33px !important;
+     /* margin: 3px; */
+     }
+ 
+ input[type="radio"] {
+ background-size: 15px;
+     transform: scale(2);
+   height: 15px;
+   z-index: 10;
+   width: 15px;
+   vertical-align: middle;
+   }
+ @media (max-width:480px){
+ 
+     .submit_btn_pay{
+         width: 45% !important;
+         margin-top: 8px;
+         text-align: center;
+         }
+         h3{
+             font-size: larger;
+         }
+         input[type="radio"] {
+             background-size: 15px;
+                 transform: scale(2);
+               height: 7px;
+               z-index: 10;
+               width: 15px;
+               vertical-align: middle;
+               }
+               .set-payment-f-cls{
+                   font-size: small;
+               }
+ }

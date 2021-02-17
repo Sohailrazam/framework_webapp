@@ -1,23 +1,72 @@
 .card_cms{
-    margin-top: 4% !important;
-    width: 55%;
+    width: 100%;
     margin: auto;
-    padding: 17px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
 }
+.heading-4-cls-cms{
+    font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 43px;
+color: #F0F0FF;
 
+}
+.content_title_cls_cms{
+    font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+color: #F0F0FF;
+
+}
+.language_cls_cms{
+    font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+text-align: right;
+
+color: #F0F0FF;
+
+}
 .style_input_cms{
-    color: white !important;
-    background: transparent !important;
+     color: white !important;
+
+     background-color: rgba(99, 99, 128, 0.1);
     border: 2px solid  #60607c;
-    
+     
+     /* color: transparent;
+     background: rgba(99, 99, 128, 0.1);
+border: 3px solid rgba(240, 240, 255, 0.1);
+box-sizing: border-box;
+border-radius: 5px; */
 }
 
+.style_input_cms:focus{
+    border: 2px solid  gold;
+    background-color: transparent;
+}
 .text_area_cms{
-    background: transparent !important;
+    /* background: transparent !important;
     color: white !important;
-    background-color: red;
-    border: 2px solid  #60607c;
-    height: 55vh !important;
+    
+    border: 2px solid  #60607c; */
+    color: white;
+    background: rgba(99, 99, 128, 0.1);
+border: 3px solid rgba(240, 240, 255, 0.1);
+box-sizing: border-box;
+border-radius: 5px;
+    height: 602px !important;
+}
+
+.text_area_cms:focus{
+    border: 2px solid  gold;
+    color: white;
+    background-color: transparent;
 }
 #additionalInfo{
     border: none;
@@ -26,10 +75,28 @@
      border-radius: 3px;
     color: white !important;
     background: transparent !important;
-    background-color: red;
     height: 45vh;
     width: 53vw;
     border-radius: 4px ;
     border: 2px solid  #60607c;
   }
- 
+
+  .mce-container-body{
+    /* background: #32324d !important; */
+     
+  }
+  .submit_button_cms{
+      
+border: 3px solid rgba(240, 240, 255, 0.1);
+box-sizing: border-box;
+border-radius: 5px;
+background-color: rgba(99, 99, 128, 0.1);
+/* padding-inline: 47px; */
+padding-left: 55px;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+
+color: #F0F0FF;
+    padding-right: 55px;
+  }

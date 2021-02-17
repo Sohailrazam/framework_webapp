@@ -1,23 +1,81 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  /* font-family: Aileron; */
   -webkit-font-smoothing: antialiased;
   background-color: #32324d !important;
-
   -moz-osx-font-smoothing: grayscale;
-  
 }
+.style_input{
+  border-radius: 5px;
+  border-bottom: 1px solid #F0F0FF !important;
+}
+.main_checkbox_cls{
+  position: absolute;
+width: 19.65px;
+height: 17.86px;
+left: 1531px;
+top: 485px;
+}
+.chkbx-1{
+  position: absolute;
+  left: 89.13%;
+  right: -66.72%;
+  top: 20.16%;
+  bottom: 67.12%;
+  background: #E4DC00;
+  border-radius: 3px;
+  transform: matrix(-0.56, 0.83, -0.83, -0.56, 0, 0);
+}
+.chkbx-2{
+  position: absolute;
+left: 18.68%;
+right: 38.09%;
+top: 47.39%;
+bottom: 39.89%;
 
+background: #E4DC00;
+border-radius: 3px;
+transform: matrix(0.78, 0.62, -0.62, 0.78, 0, 0);
+}
+/* .btn-secondary{
+  background: rgba(99, 99, 128, 0.1) !important;
+} */
 nav.bg-nvbar-cls{
   background: #32324d !important;
 }
+/* custom chcekbox */
+/* .custom-checkbox .custom-control-label::before{
+  border-radius: 0.1rem !important;
+} */
+/* .custom-control-label::before{
+  border: 3px solid rgba(240, 240, 255, 0.1) !important ;
+  width: 45px !important;
+  background-color: rgba(99, 99, 128, 0.1)  !important;
+  top: -0.6rem !important;
+height: 45px !important;
+left: -1.9rem;
+} */
+/* .custom-control-label::after{
+  background-color: rgba(99, 99, 128, 0.1)  !important;
+  left: -1.8rem;
+  top: -0.5rem;
+width: 2.1rem !important;
+    height: 2rem !important;
+  
+} */
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after{
+  /* left: -1.1rem !important; */
+}
+
+  /* width: 1.2rem;
+  left: -1.4rem;
+  top: 1.5rem; */
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  /* font-family: Aileron !important; */
+  font-style: normal;
+  font-weight: normal;
 }
 /* log in styling */
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
@@ -29,17 +87,22 @@ body {
   min-height: 100vh;
   display: flex;
   font-weight: 400;
-  font-family: 'Fira Sans', sans-serif;
+  /* font-family: Aileron; */
+  font-style: normal;
+  font-weight: normal;
 }
+pre{
 
+  font-family: 'FontMe' !important;
+}
 h1,h2,h3,h4,h5,h6,label,span {
-  font-weight: 500;
-  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+font-style: normal;
+font-weight: normal;
 }
 .btnedited{
     background-color: #2176ff ;
     border: 3px solid yellow;
-    background-color: red;
     color: white;
     text-decoration: none;
     letter-spacing: 1px;
@@ -95,6 +158,7 @@ body, html, .App, #root, .auth-wrapper {
   text-align: right;
   font-size: 13px;
   padding-top: 10px;
+  
   color: #7f7d7d;
   margin: 0;
 }
@@ -102,22 +166,246 @@ body, html, .App, #root, .auth-wrapper {
 .forgot-password a {
   color: #167bff;
 }
+
+
+@media(min-width:1920px){
+  .Side_title{
+ 
+font-size: 24px;
+line-height: 29px;
+}
+
+  .style_head_two_med{
+    /* font-family: Aileron; */
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 43px;
+
+color: #F0F0FF;
+
+  }
+  .getToknow{
+    border: 3px solid rgba(240, 240, 255, 0.1);
+box-sizing: border-box;
+border-radius: 5px;
+  }
+  .stylebuttmed{
+    border: 3px solid rgba(240, 240, 255, 0.1);
+box-sizing: border-box;
+border-radius: 5px;
+font-size: 18px;
+margin: 0px 10px;
+line-height: 22px;
+color: #32324D;
+
+  }
+  .styleheadmed{
+    /* font-family: Aileron; */
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 43px;
+
+  }
+  .stylefontmed{
+ /* font-family: Aileron; */
+font-style: normal;
+font-weight: normal;
+font-size: 72px;
+line-height: 86px;
+  }
+  .btn-cls-cmpfrgt{
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+  .dateset{
+    font-size: 12px;
+    line-height: 14px;
+    color:  #babad8;
+    /* margin-left: 15px !important; */
+  }
+  .username-post{
+    
+font-size: 12px;
+line-height: 14px;
+  }
+  .languages{
+    font-size: 18px;
+line-height: 22px;
+  }
+  .para_blg{
+    font-size: 24px !important;
+    line-height: 29px;
+  }
+  .titlepost{
+font-size: 36px;
+line-height: 43px;
+}
+
+  .font_all_lbl{
+    
+  /* font-family: Aileron; */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px !important;
+  line-height: 14px !important;
+  }
+  .reg{
+font-size: 36px;
+line-height: 43px;
+  }
+  .setsignup{
+    padding-top:30px !important ;
+width: 50% !important;
+height: 1080px !important;
+background: #32324D;
+  }
+  .content-blog{
+    font-size: 18px;
+line-height: 22px;
+  }
+  li a.nav-link{
+    font-size: 18px !important ;
+line-height: 22px !important;
+  }
+  .logoc{
+    /* position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 753px;
+  top: 13px; */
+}
+  .bg-nvbar-cls{
+    font-size: 18px;
+  }
+/* .content-div-col2{
+  border: 2px solid  #60607c;
+  border: 3px solid rgba(240, 240, 255, 0.1);
+box-sizing: border-box;
+} */
+  .CardLogin{
+    position: absolute !important;
+    width: 343px !important;
+    left: 789px;
+    top: 247px;
+  }
+  .f-14-c-cls{
+font-size: 24px;
+  }
+  .cus-bdr-cls{
+    height: 206px !important;
+    background: rgba(99, 99, 128, 0.1) !important;
+  }
+  .cus-bdr-cls-pkg{
+    height: 83px !important;
+    padding-top: 10px;
+    background: rgba(99, 99, 128, 0.1)!important;
+
+  }
+  .cus-bdr-cls-un{
+    height: 467px !important;
+    
+
+  }
+.btn-sub-cls{
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.post_paragraph {
+  display: block !important;
+  width: 100vw !important;
+}
+.login_btn{
+  width: 163px !important;
+}
+
+}
 @media(max-width:768px){
+  .cus-bdr-cls-un{
+    display: none !important;
+  }
+
   .card{
     width:50% !important
+  }
+  .btn_reg_cls{
+    text-align: center !important;
+  }
+  .submit_reg{
+    width: 25vw !important;
+    /* display: block !important; */
   }
   .setsignup{
     width: 73% !important;
   }
+  .styleTryitbuttmed{
+  width: auto !important;
+    padding: 5px 20px !important;
+    color: black;
+    height: auto;
+   
+    margin-top: 6px;
+  }
+  .stylebuttmed{
+    width: 150px !important;
+    margin-bottom: 6px;
+  }
 }
-@media (max-width:480px){
-  .card{
-    width:100% !important;
-
+@media(max-width:375px){
+  h3.f-s-clsq{
+    font-size: 11px!important;
+  }
+}
+@media (max-width:320px){
+  .btn-sub-cls{
+    display: block !important;
+    padding-left: 2px !important;
+    padding-right: 13px !important;
+    /* width: 57px !important; */
 
   }
+  h3.f-s-clsq{
+    padding-left: 0px !important;
+  }
+  /* .btn-sub-cls-new{
+    margin-top: 40px;
+  }
+  */
+   div.new-cls-med-pkgs{
+    width: 91vw;
+
+    padding: none !important;
+    height: 25vh !important;
+    /* background-color: red !important; */
+  }
+
+}
+@media (max-width:480px){
+  .respkg-cls2 {
+  font-size: 22px !important;
+  }
+  .or-cls{
+    display: none !important;
+  }
+  .new-cls-med-pkgs{
+    width: 90vw;
+     height: 129px !important;
+  }
+  .card{
+    width:100% !important;
+  }
+  /* div.cardLoginMBL{
+    width:90% !important;
+    margin-left: 20px !important;
+  } */
+  .btn2-stl-new{
+    font-size: 17px !important;
+  }
+
   .stylefontmed{
-   font-size:  33px;
+   font-size:  33px !important;
   }
   .card-new-post{
     margin-right: 0px !important;
@@ -126,13 +414,21 @@ body, html, .App, #root, .auth-wrapper {
     margin-right: 0px !important;
 
   }
+  .btn_reg_cls{
+    text-align: center !important;
+  }
+  .submit_reg{
+    width: 25vw !important;
+    /* display: block !important; */
+  }
+  .btn_reg_cls
   .card-new-post3{
     margin-right: 0px !important;
 
   }
+
   .stylebuttmed{
     width: 150px !important;
-    margin-bottom: 6px;
   }
   .styleheadmed{
     font-size: 22px;
@@ -144,32 +440,37 @@ body, html, .App, #root, .auth-wrapper {
   .style_head_two_med{
     font-size: 15px;
   }
+
    .getToknow{
      font-size:  18px;
-     margin-top: 7px;
+     height: auto;
+     
   }
   .styleTryitbuttmed{
     display: block !important;
-    width: auto !important;
-    padding: 5px 20px !important;
+    width: 33vw !important;
+    padding: 6px 1px !important;
     color: black;
+    height: auto !important;
     margin: auto;
     position: relative;
-    left: 49px;
+
     margin-bottom: 6px;
   }
-.stylebuttlogin{
+a.stylebuttlogin{
   width:90px !important;
-    margin-bottom: 6px;
+  
     margin: auto;
+    height: auto !important;
     
     position: relative;
-    left: 70px;
+    left: 34px;
     justify-content: center;  
     display: block !important;
 }
 .setsignup{
   width: 94% !important;
+  height: 100% !important;
   /* padding: 0 !important; */
 }
 .menus {
@@ -178,6 +479,7 @@ body, html, .App, #root, .auth-wrapper {
 }
 .jstfy_content{
   font-size:  21px;
+  display: block;
 }
 .hideMed{
   display: none !important;
@@ -186,6 +488,9 @@ ul.navbar-nav{
   padding-left: 0px !important;
 }
 .loginmed{
+  text-align: center !important;
+}
+.reset_btn_med{
   text-align: center !important;
 }
 h5.forgotpassword{
@@ -224,7 +529,7 @@ h5.forgotpassword{
 
   font-size: 15px  !important;
 }
-getToknow 
+
 .submit_btn_forgt{
 width: 45% !important;
 margin-top: 8px;
@@ -243,7 +548,18 @@ margin-top: 8px;
 .font_all_lbl{
   font-size: 14px;
 }
+.setbuttonframe{
+  display: inline-flex !important;
+  padding-right:  31px;
+  margin-top: 13px;
+}
 .text_blog_post{
   padding-left: 15px !important;
+}
+.stylebuttloginac{
+  margin: 0 !important;
+  padding: 9px !important;
+    justify-content: center;
+    width: 68vw !important;
 }
 }

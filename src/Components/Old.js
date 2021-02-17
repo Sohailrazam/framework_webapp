@@ -1,214 +1,150 @@
-// import {Col , Row , CustomInput, Button , Container } from 'reactstrap';
-import './Signup.css'
+import React from "react";
 import {Col , Row ,Form, FormGroup, Label, Input, FormText, CustomInput, Button , Container } from 'reactstrap';
+// import { Button, Form, FormGroup, Label, Input, FormText
+// import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+// import { Button,  } from 'reactstrap';
 
-import React, {useState, useEffect} from 'react';
-import { useHistory } from "react-router-dom";
-import APIService from './api'
-import { useAlert } from 'react-alert'
-
+import './Signup.css'
 export const Signup = () => {
-const [first_name, setFirstname] = useState('');
-const [last_name, setLastname] = useState('');
-const [email, setEmail] = useState('');
-const [street, setStreet] = useState('');
-const [street_number, setStreetNumber] = useState('');
-const [zip_code, setZipCode] = useState('');
-const [city, setCity] = useState('');
-const [country, setCountry] = useState('');
-const [password1, setPassword] = useState('');
-const [password2, setConfirmPassword] = useState('');
-const [data, SetData] = useState([])
-const [cusActive,checkHandler]=useState(false);
-
-const [responseData, SetResponseData] = useState([]);
-let history = useHistory();
-const alert = useAlert()
-const [checked, setChecked] = useState(true);
-
-useEffect(() => {
-  console.log(responseData.status);
-  if (responseData.status === 201) {
-   //activation page
-   history.push('/activation');
-   alert.success('You are successfully Register!');
-  }
-  else if(responseData.status === 400) {
-    console.log("registration fail")
-    alert.error('Something Wrong!');
-    //
-  }
-   else {
-    console.log("Fields error");
-   }
-}, [responseData.status])
-
-
-  const register = () => {
-    if(checked === false){
-      APIService.RegisterUser({first_name,last_name,email,street,street_number,zip_code,city,country, password1,password2})
-    .then(response => {SetData(response.json().then(resp => {SetData(resp);
-    SetResponseData(response);
-    }))})
-    }
-    else{
-      alert.error("Verify that you are not robot !");
-    }
-    
-  }
-
   return (
     <Container className="themed-container" fluid={true}>
-    
        <div className="setsignup">
-       <div className="cardsignup">
       <h4 className="reg">Register</h4>
-      <form>
 
+       <div className="cardsignup">
+   
+      <form>
+        {/* <h3> */}
+        
+        {/* </h3> */}
+        {/* <div className="fo" */}
         <Row>
       <Col>
       <div className="form-group text-left">
-          <label className="font_all_lbl" >First Name</label>
+          <label className="font_all_lbl" style={{color:'yellow'}}>First Name</label>
           <input
-            required
+          required
             type="Fname"
             className="form-control style_input"
             placeholder="Enter first name"
-            onChange={e => setFirstname(e.target.value)}
+      
                       />
-     {data.first_name && <span style={{color:'white', fontStyle:'italic', fontSize:'12px'}}>{data.first_name}</span>}
-        
         </div>
       </Col>
 
       <Col>
       <div className="form-group text-left">
-          <label className="font_all_lbl"  >Last Name</label>
+          <label className="font_all_lbl"  style={{color:'yellow'}}>Last Name</label>
           <input
             type="Lname"
             required
             className="form-control style_input"
             placeholder="Enter last name"
-            onChange={e => setLastname(e.target.value)}
+           
                       />
-            {data.last_name && <span style={{color:'white', fontStyle:'italic', fontSize:'12px'}}>{data.last_name}</span>}
         </div>
       </Col>
       </Row>
         
-
+        
         
         <div className="form-group text-left">
-          <label className="font_all_lbl" >Email</label>
+          <label className="font_all_lbl" style={{color:'yellow'}}>Email</label>
           <input
             type="email"
             required
             className="form-control style_input"
             placeholder="Enter your email"
-            onChange={e => setEmail(e.target.value)}
           />    
-          {data.email && <span style={{color:'white', fontStyle:'italic', fontSize:'12px'}}>{data.email}</span>}
         </div>
-      
         <div className="form-group text-left">
-          <label className="font_all_lbl" >Password</label>
+          <label className="font_all_lbl" style={{color:'yellow'}}>Password</label>
           <input
             type="password"
             required
             className="form-control style_input"
             placeholder="Enter your password"
-            onChange={e => setPassword(e.target.value)}
-            
-          />
-          {data.password1 && <span style={{color:'white', fontStyle:'italic', fontSize:'12px'}}>{data.password1}</span>}    
+          />    
         </div>
         <div className="form-group text-left">
-          <label className="font_all_lbl" >Repeat Password</label>
+          <label className="font_all_lbl" style={{color:'yellow'}}>Repeat Password</label>
           <input
             type="password"
             required
             className="form-control style_input"
             placeholder="Confirm your password"
-            onChange={e => setConfirmPassword(e.target.value)}
           />    
-          {data.non_field_errors && <span style={{color:'white', fontStyle:'italic', fontSize:'12px'}}>{data.non_field_errors}</span>}
-        
         </div>
-        <Row>
-      <Col>
-      <div className="form-group text-left">
-          <label className="font_all_lbl" >Street</label>
-          <input
-          required
-            type="Street"
-            className="form-control style_input"
-            placeholder="Enter Street name"
-            onChange={e => setStreet(e.target.value)}
-                      />
-        {data.street && <span style={{color:'white', fontStyle:'italic', fontSize:'12px'}}>{data.street}</span>}
-        </div>
-      </Col>
-
-      <Col xs="auto">
-      <div className="form-group text-left">
-          <label className="font_all_lbl" >Street Number</label>
-          <input
-            type="Number"
-            required  
-            className="form-control form-control-nmbr style_input"
-            placeholder="Enter Street Number"
-            onChange={e => setStreetNumber(e.target.value)}
-                      />
-            {data.street_number && <span style={{color:'white', fontStyle:'italic', fontSize:'12px'}}>{data.street_number}</span>}
-        </div>
-      
-      </Col>
-     
-      </Row>
         
         {/* <span style={{textAlign:'left'}} color="secondary"style={{ color:"white",  backgroundColor:'#32324d'}} className="btnedited">  */}
         {/* <input type="checkbox" id="periph2" name="peripherals" value="keyboard"></input> */}
         {/* <CustomInput type="checkbox" id="exampleCustomCheckbox2" label="I &#039; m not robot" />  */}
           {/* </span> */}
-          
+          <Row>
+      <Col>
+      <div className="form-group text-left">
+          <label className="font_all_lbl" style={{color:'yellow'}}>Street</label>
+          <input
+          required
+            type="Street"
+            className="form-control style_input"
+            placeholder="Enter Street name"
+      
+                      />
+        </div>
+      </Col>
+
+      <Col xs="auto">
+      <div className="form-group text-left">
+          <label className="font_all_lbl"  style={{color:'yellow'}}>Street Number</label>
+          <input
+            type="Number"
+            required  
+            className="form-control style_input"
+            placeholder="Enter Street Number"
+           
+                      />
+        </div>
+      
+      </Col>
+     
+      </Row>
+      
       <Row>
       <Col>
          
       <div className="form-group text-left">
-          <label className="font_all_lbl">City</label>
+          <label className="font_all_lbl" style={{color:'yellow'}}>City</label>
           <input
             type="text"
             required
             className="form-control style_input"
             placeholder="Enter Your City Name"
-            onChange={e => setCity(e.target.value)}
             />    
-            {data.city && <span style={{color:'white', fontStyle:'italic', fontSize:'12px'}}>{data.city}</span>}
         </div>
             </Col>
       </Row>
       <Row>
       <Col xs="auto">
       <div className="form-group text-left">
-          <label className="font_all_lbl"  >ZIP Code</label>
+          <label className="font_all_lbl"  style={{color:'yellow'}}>ZIP Code</label>
           <input
             type="Number"
             required  
             className="form-control style_input"
-            placeholder="Zip Code"
-            onChange={e => setZipCode(e.target.value)}
+            placeholder="Enter Street Number"
+           
                       />
-        {data.zip_code && <span style={{color:'white', fontStyle:'italic', fontSize:'12px'}}>{data.zip_code}</span>}
         </div>
       
       </Col>
       <Col>
       <div className="form-group text-left">
-          <label className="font_all_lbl" >Country</label>
+          <label className="font_all_lbl" style={{color:'yellow'}}>Country</label>
           <FormGroup>
-        <Input className="form-control style_input"
- type="select" name="select" id="exampleSelect" style={{backgroundColor:'transparent',color:'white'}} onChange={e => setCountry(e.target.value)}>
-          <option value="" selected="selected">United State America</option>
+        <Input className="form-control style_input_cont"
+ type="select" name="select" id="exampleSelect" style={{color:'black'}}>
+<option value="" selected="selected">United State America</option>
 <option value="United Kingdom">United Kingdom</option> 
 <option value="Afghanistan">Afghanistan</option> 
 <option value="Albania">Albania</option> 
@@ -450,8 +386,6 @@ useEffect(() => {
 <option value="Zambia">Zambia</option> 
 <option value="Zimbabwe">Zimbabwe</option>
         </Input>
-        {data.country && <span style={{color:'white', fontStyle:'italic', fontSize:'12px'}}>{data.country}</span>}
-       
       </FormGroup>
           {/* <input
           required
@@ -471,24 +405,15 @@ useEffect(() => {
       </Row>
       
           <Row>
-          
             <Col>
-          <div style={{color: '#F0F0FF',textAlign:'left', paddingTop:"20px"}}>
-        {/* <CustomInput className="custom-control-label-sign-up" type="checkbox" id="exampleCustomCheckbox2" label="I &#039;m not robot"  */}
-        
-          <img src={cusActive?"/signup-c.svg":"/unch.svg"}onClick={()=>checkHandler(!cusActive)
-            
-        }
-        onChange={() => {
-          setChecked(!checked);
-          console.log(checked)
-        }}/> 
-        <Label style={{color: '#F0F0FF',paddingLeft:'14px'}}>I &#039;m not robot</Label>
+          <div className="robotclass" >
+        <CustomInput type="checkbox" id="exampleCustomCheckbox2" label="I &#039;m not robot" /> 
+
           </div>
             </Col>
             <Col>
-        <p className="btn_reg_cls" style={{textAlign:'right',paddingTop:'13px'}}>
-        <Button color="secondary"style={{ color: '#F0F0FF',  backgroundColor:' rgba(99, 99, 128, 0.1)'  }} className="submit_reg" onClick={register}>Register</Button>
+        <p style={{textAlign:'right'}}>
+        <Button color="secondary"style={{ color:"white",  backgroundColor:'#32324d'  }} className="submit_reg">Register</Button>
         </p>
             </Col>
           </Row>

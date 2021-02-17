@@ -1,6 +1,24 @@
+.fonts_all{
+    /* font-family: Aileron; */
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+background: #32324D;
+line-height: 29px;
+color: #F0F0FF;
+}
+.titlepost{
+font-style: normal;
+font-weight: normal;
+color: #F0F0FF;
+}
 .languages{
     text-align: left;
     padding: 6px;
+    /* font-family: Aileron; */
+font-style: normal;
+font-weight: normal;
+color: #F0F0FF;
 }
 .plussymbol{
     font-size: 30px;
@@ -8,75 +26,92 @@
 }
 .toolblog{
     position: relative;
-    bottom: 12px;
+    bottom: 10px;
+    padding-left: 20px;
     right: 7px;
     display: inline;
 }
-.card-new-post{
-    background-color:#373752;
-    padding:3px;
-    border-radius: 9px;
-    text-align: left;
-    margin-left: 3px;
-    /* marg */
-    margin-bottom: 9px;
-    
+.all_posts{
+    height: 79vh !important;
+    /* overflow-x: hidden; */
+    scrollbar-color: #C5C5E0;
+    overflow-y: scroll;
 }
-.card-new-post2{
-    background-color:#373752;
-    padding:3px  ;
-    border-radius: 9px;
-    text-align: left;
-    border: 5px solid ;
-    margin-left: 3px;
-    /* marg */
-    border: 2px solid  #60607c;
-    margin-bottom: 9px;
 
-}
-.card-new-post3{
-    background-color:#373752;
-    padding:3px  ;
-    border-radius: 9px;
-    text-align: left;
-    border: 5px solid ;
-    margin-left: 3px;
-    /* marg */
-    border: 2px solid  #60607c;
-    margin-bottom: 9px;
-    height: 120px;
-    }
-.username-post{
+.card-new-post{
     
-    color: #babad8;
-    /* line-height: 14px; */
+background: rgba(99, 99, 128, 0.1);
+border-radius: 5px;
+    padding:3px;
+    border: 3px solid rgba(240, 240, 255, 0.1);
+box-sizing: border-box;
+    text-align: left;
+    margin-left: 3px;
+    margin-bottom: 9px;
+    margin-top: 10px;
+    padding-top: 15px;
+    
+}
+
+.card-new-post:hover {
+    border: 1.5px solid gold;
+}
+
+.username-post{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(240, 240, 255, 0.7);
     text-align: left;
     padding-left: 12px;
-
 }
 .content-blog{
     color: #d2d2e3;
     padding-top: 13px;
+    padding-bottom: 5px;
+    font-style: normal;
+    font-weight: normal;
     margin-bottom: 0;
-  
 }
+
 .para{
     text-align: justify;
     padding: 3px;
     margin: 2px 20px;
+font-style: normal;
+/* overflow:auto;  */
+font-weight: normal !important;
+/* text-overflow: ellipsis; */
+font-size: 24px !important;
+line-height: 29px;
+color: #F0F0FF !important;
+overflow-x: auto;
+white-space: pre-line;
+white-space: -moz-pre-wrap !important;
+white-space: -pre-wrap !important;
+word-break: break-all;
+white-space: -o-pre-wrap !important;
 }
 .sub-head-style{
-    color:  #babad8;
     padding-left: 24px;
+    display: block !important;
     font-size: 18px;
+    line-height: 22px;
+/* identical to box height */
+
+
+color: rgba(240, 240, 255, 0.7);
+
 }
 .dateset{
     font-size: 14px;
-    color: #b9b9db;
+    margin-left: 15px;
+    font-style: normal;
+    font-weight: normal;
     line-height: 14px;
-    text-align: right;
-    display: inline-block;
-    
+    color: rgba(240, 240, 255, 0.7);
+    /* display: inline; */
 }
 .icon-blog{
     font-size: 11px;
@@ -84,13 +119,35 @@
     position: relative;
     top: -14px;
 }
-
+.blog_btn_del , .blog_btn_cancel {
+    background: rgba(99, 99, 128, 0.1);
+    border: 3px solid rgba(240, 240, 255, 0.1);
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px ;
+  line-height: 22px;
+  /* identical to box height */
+  
+  text-align: center;
+  
+  color: #F0F0FF;
+  border-radius: 5px;
+}
 .content-div-col2{
-    border: 2px solid  #60607c;
-    max-height: 590px;
+    /* width: 1286px; */
+    /* height: calc(100% - 1.5em) !important; */
+  /* position: absolute; */
+  height: 86vh !important;
+    max-height: 94vh !important;
     overflow-y: scroll;
+    background: rgba(99, 99, 128, 0.1);
+border: 3px solid rgba(240, 240, 255, 0.1);
+box-sizing: border-box;
+/* position: relative;
+margin: auto; */
+border-radius: 5px;
     scrollbar-color: #C5C5E0;
-
 }
 .content-div-col2::-webkit-scrollbar {
     width: 5px;
@@ -102,3 +159,29 @@
     background:  #aaaac7;
     /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);  */
 }
+
+.post_paragraph {
+    width: 570px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+}
+.modal-content {
+    background-color: #32324d !important;
+    color: #fff;
+}
+
+.modal_header{
+    color:#fff
+}
+.close {
+    color: #fff !important;
+}
+.Side_title{
+    font-style: normal;
+    font-weight: normal;
+color: #F0F0FF !important;
+}
+
+

@@ -1,22 +1,25 @@
 import React from "react";
 import { Jumbotron, Button } from "reactstrap";
 import "./content.css";
-export const Content = () => {
-  return (<div>
-    <Jumbotron>
-      <h1 className="display-5 stylefontmed">Frame your work and see it thrive!</h1>
+import {Link} from 'react-router-dom'
+import {useCookies} from 'react-cookie';
 
-      <h3 className="styleheadmed">
+export const Content = () => {  
+
+  const [token, setToken] = useCookies(['token'])
+
+  return (
+    <Jumbotron style={{marginTop:"17%"}}>
+      <h1 className="display-6 btn-stl-new stylefontmed">Frame your work and see it thrive!</h1>
+      <h5 className="styleheadmed btn2-stl-new ">
         Get on top of your project with{" "}
-        <code style={{ color: "yellow" }}>framework</code>
-      </h3>
-
-      <hr className="my-2" />
+        <span style={{ color: "#E4DC00" }}>framework</span>
+      </h5>
       <p className="lead">
-        <Button className="stylebuttmed" color="warning">Try it out!</Button>{" "}
-        <Button className="getToknow" color="secondary">Get to know framework</Button>
+        {token['token'] ? 
+       " " :  <Link className="stylebuttmed btn-tryout btn" style={{backgroundColor:"#E4DC00", width: "163px"}} to="/signup">Try it out!</Link> }
+        <Link style={{marginLeft:'9px'}} className="getToknow getToKnowf btn btn-secondary" to="/framework">Get to know framework</Link>
       </p>
     </Jumbotron>
-  </div>
   );
 };
